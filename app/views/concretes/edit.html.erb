@@ -1,11 +1,11 @@
-<%= form_tag("/concretes/#{@concrete.id}", method: "patch") do %>
-  <%= label_tag("concrete[mix_type]", "Mix Type") %><br><br>
-  <%= text_field_tag("concrete[mix_type]", @concrete.mix_type) %><br><br>
-  <%= label_tag("concrete[color]", "Color") %><br><br>
-  <%= text_field_tag("concrete[color]", @concrete.color) %><br><br>
-  <%= label_tag("concrete[psi]", "PSI") %><br><br>
-  <%= text_field_tag("concrete[psi]", @concrete.psi) %><br><br>
-  <%= label_tag("concrete[cost_per_yard]", "Cost Per Yard") %><br><br>
-  <%= text_field_tag("concrete[cost_per_yard]", @concrete.cost_per_yard) %><br><br>
-  <%= submit_tag("Update Concrete") %>
+<%= form_tag "/concretes/#{@concrete.id}", method: "patch" do %>
+  <%= label_tag      "concrete[mix_type]", "Mix Type" %><br><br>
+  <%= text_field_tag "concrete[mix_type]", @concrete.mix_type %><br><br>
+  <%= label_tag      "concrete[color]", "Color" %><br><br>
+  <%= text_field_tag "concrete[color]", @concrete.color %><br><br>
+  <%= label_tag      "concrete[psi]", "PSI" %><br><br>
+  <%= text_field_tag "concrete[psi]", @concrete.psi %><br><br>
+  <%= label_tag      "concrete[cost_per_yard]", "Cost Per Yard" %><br><br>
+  <%= text_field_tag "concrete[cost_per_yard]", @concrete.cost_per_yard %><br><br>
+  <%= submit_tag     "Update Concrete" %>
 <% end %>

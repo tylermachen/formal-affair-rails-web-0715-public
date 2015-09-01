@@ -1,5 +1,5 @@
 <form action="/searches" method="post">
-  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label for="q">"Search for:"</label>
   <input type="text" name="q" value="q">
   <input type="submit" value="Search">
